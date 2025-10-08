@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기억력 카드 게임</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game">
+      <header class="game__header">
+        <h1 class="game__title">기억력 카드 게임</h1>
+        <div class="game__actions">
+          <div class="game__counter" aria-live="polite">
+            <span class="game__label">시도 횟수</span>
+            <span id="attempt-count" class="game__value">0</span>
+          </div>
+          <button id="reset-button" class="game__reset" type="button">
+            다시 시작
+          </button>
+        </div>
+      </header>
+      <section
+        id="card-grid"
+        class="game__board"
+        aria-label="기억력 카드 게임판"
+      ></section>
+      <p
+        id="congrats-message"
+        class="game__congrats"
+        role="alert"
+        aria-live="assertive"
+        hidden
+      >
+        축하합니다! 모든 카드를 맞추셨습니다.
+      </p>
+    </main>
+
+    <template id="card-template">
+      <button class="card" type="button" aria-label="카드 뒤집기">
+        <div class="card__inner">
+          <span class="card__face card__face--back">?</span>
+          <span class="card__face card__face--front"></span>
+        </div>
+      </button>
+    </template>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
