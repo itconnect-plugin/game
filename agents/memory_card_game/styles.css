@@ -3,6 +3,9 @@
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   background: linear-gradient(135deg, #f6f7fb 0%, #dfe9f3 100%);
   min-height: 100%;
+  --card-back-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNDY1NGZmIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3NmIwZmYiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHBhdHRlcm4gaWQ9ImRvdHMiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxjaXJjbGUgY3g9IjQiIGN5PSI0IiByPSIyIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuNSkiIC8+CiAgICAgIDxjaXJjbGUgY3g9IjE2IiBjeT0iMTIiIHI9IjEuNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjQ1KSIgLz4KICAgICAgPGNpcmNsZSBjeD0iMTAiIGN5PSIyMCIgcj0iMS41IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuNCkiIC8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSJ1cmwoI2RvdHMpIiBvcGFjaXR5PSIwLjY1IiAvPgogIDxwYXRoIGQ9Ik0wIDE0MCBRMTAwIDEwMCAyMDAgMTQwIEwyMDAgMjAwIEwwIDIwMCBaIiBmaWxsPSJyZ2JhKDIyLDM3LDE0MCwwLjM1KSIgLz4KICA8cGF0aCBkPSJNMCAxNjAgUTEwMCAxMjAgMjAwIDE2MCIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMjUpIiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9Im5vbmUiIC8+Cjwvc3ZnPgo=");
+  --card-front-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZnJvbnQtZ3JhZCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmU4ZmYiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHBhdHRlcm4gaWQ9ImZyb250LXBhdHRlcm4iIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDQ1KSI+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMiIgaGVpZ2h0PSIzNiIgZmlsbD0icmdiYSgxMjYsIDE1NSwgMjU1LCAwLjA4KSIgLz4KICAgICAgPHJlY3QgeD0iMTgiIHk9IjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjM2IiBmaWxsPSJyZ2JhKDEyNiwgMTU1LCAyNTUsIDAuMTIpIiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNmcm9udC1ncmFkKSIgLz4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNmcm9udC1wYXR0ZXJuKSIgb3BhY2l0eT0iMC43NSIgLz4KICA8cGF0aCBkPSJNMCA0MCBRMTAwIDgwIDIwMCA0MCIgc3Ryb2tlPSJyZ2JhKDEyNiwgMTU1LCAyNTUsIDAuMjIpIiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9Im5vbmUiIC8+CiAgPHBhdGggZD0iTTAgMTcwIFExMDAgMTQwIDIwMCAxNzAiIHN0cm9rZT0icmdiYSgxMjYsIDE1NSwgMjU1LCAwLjE4KSIgc3Ryb2tlLXdpZHRoPSI4IiBmaWxsPSJub25lIiAvPgo8L3N2Zz4K");
+  --card-front-matched-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibWF0Y2hlZC1ncmFkIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmY3ZTYiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZTBhMyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cGF0dGVybiBpZD0ibWF0Y2hlZC1wYXR0ZXJuIiB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8cGF0aCBkPSJNMCAxNCBMMTQgMCBMMjggMTQgTDE0IDI4IFoiIGZpbGw9InJnYmEoMjU1LCAxNjYsIDc3LCAwLjI4KSIgLz4KICAgICAgPGNpcmNsZSBjeD0iMTQiIGN5PSIxNCIgcj0iNSIgZmlsbD0icmdiYSgyNTUsIDEyNiwgOTUsIDAuMzUpIiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNtYXRjaGVkLWdyYWQpIiAvPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSJ1cmwoI21hdGNoZWQtcGF0dGVybikiIG9wYWNpdHk9IjAuODUiIC8+CiAgPHBhdGggZD0iTTAgNjAgUTEwMCAzMCAyMDAgNjAiIHN0cm9rZT0icmdiYSgyNTUsIDE2NiwgNzcsIDAuMzUpIiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9Im5vbmUiIC8+CiAgPHBhdGggZD0iTTAgMTcwIFExMDAgMjAwIDIwMCAxNzAiIHN0cm9rZT0icmdiYSgyNTUsIDE5MywgOTQsIDAuNCkiIHN0cm9rZS13aWR0aD0iMTAiIGZpbGw9Im5vbmUiIC8+Cjwvc3ZnPgo=");
 }
 
 *,
@@ -125,17 +128,22 @@ body {
   font-size: clamp(32px, 6vw, 42px);
   backface-visibility: hidden;
   user-select: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card__face--back {
-  background: linear-gradient(160deg, #4f6ef7, #7b9dfc);
-  color: rgba(255, 255, 255, 0.9);
+  background-image: var(--card-back-image);
+  color: rgba(255, 255, 255, 0.92);
   font-size: clamp(28px, 5vw, 36px);
+  text-shadow: 0 6px 12px rgba(16, 32, 96, 0.45);
 }
 
 .card__face--front {
-  background: #ffffff;
+  background-image: var(--card-front-image);
   transform: rotateY(180deg);
+  color: #1c274c;
 }
 
 .card--flipped .card__inner,
@@ -148,11 +156,13 @@ body {
 }
 
 .card--matched .card__inner {
-  box-shadow: 0 12px 30px rgba(79, 110, 247, 0.35);
+  box-shadow: 0 12px 30px rgba(255, 174, 66, 0.45);
 }
 
 .card--matched .card__face--front {
-  background: #e5edff;
+  background-image: var(--card-front-matched-image);
+  color: #704215;
+  text-shadow: 0 4px 12px rgba(255, 182, 90, 0.45);
 }
 
 .game__congrats {
